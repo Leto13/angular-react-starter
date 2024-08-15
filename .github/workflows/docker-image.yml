@@ -35,7 +35,7 @@ jobs:
         server_address: smtp.gmail.com
         server_port: 465
         username: ${{ ivan.tokovoy93 }}
-        password: ${{ khwqdApHLwNXS4 }}
+        password: ${{ password }}
         subject: "Test Pipeline Failed"
         to: ${{ secrets.NOTIFY_EMAIL }}
         from: ${{ secrets.ivan.tokovoy93 }}
