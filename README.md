@@ -1,4 +1,4 @@
-# Angular 15 & React 18 Examples Starter
+# Angular 18 , React 18 & Node Examples Starter
 
 <table>
 <tr>
@@ -8,12 +8,11 @@
     alt="Ganatan Angular Example Demo" width="140" height="140">
   </a>
 
-it's part of a repo series designed 
+it's part of a repo series designed
 
+to create a **Web Application with Angular 18**
 
-to create a **Web Application with Angular 15**
-
-* Featuring [**Angular 15.2.2**](https://github.com/angular/angular/releases) & [**Angular CLI 15.2.2**](https://github.com/angular/angular-cli/releases/)
+* Featuring [**Angular 18.1.4**](https://github.com/angular/angular/releases) & [**Angular CLI 18.1.4**](https://github.com/angular/angular-cli/releases/)
 
 
 * See the [**Angular Live demo**](#angular-live-demo), Test the repo with [**Quick start**](#angular-quick-start) and for more information Read the step by step [**Tutorial**](#angular-tutorial) or read the [**Getting started**](#angular-getting-started)
@@ -23,7 +22,13 @@ to create a **Web Application with Angular 15**
 to create a **Web Application with React 18**
 
 
-* Featuring [**React 18.2.0**](https://github.com/facebook/react/releases) & [**Create-react-app 5.0.1**](https://github.com/facebook/create-react-app/releases)
+* Featuring [**React 18.3.1**](https://github.com/facebook/react/releases) & [**Create-react-app 5.0.1**](https://github.com/facebook/create-react-app/releases)
+
+
+to create a **Node Application with Express 4**
+
+
+* Featuring [**Express 4.19.2**](https://github.com/expressjs/express/releases)
 
 
 </td>
@@ -36,7 +41,7 @@ Here is a working Angular live demo :  https://angular.ganatan.com
 <p align="center">
   <p align="center">
     <a href="https://angular.ganatan.com/">
-      <img src="https://media.giphy.com/media/9BuBBLc7keCgRojp92/giphy.gif" alt="Angular 15 Example 
+      <img src="https://media.giphy.com/media/9BuBBLc7keCgRojp92/giphy.gif" alt="Angular 16 Example 
       Application"/>
     </a>
   </p>
@@ -94,6 +99,31 @@ npm start
 in your browser go to [http://localhost:3000](http://localhost:3000) 
 
 
+# [Node Quick start](#node-quick-start)
+
+```bash
+# choose a repo
+# download the example or clone the repo from github
+git clone https://github.com/ganatan/angular-react-starter.git
+
+# download the example or clone the repo from gitlab
+git clone https://gitlab.com/ganatan/angular-react-starter.git
+
+# change directory
+cd angular-react-starter
+cd node
+
+# install the repo with npm
+npm install
+
+# start the server
+npm start
+
+
+```
+
+in your browser go to [http://localhost:5000](http://localhost:5000) 
+
 
 # [Angular Tutorial](#angular-quick-start)
 
@@ -150,6 +180,28 @@ Here is a step by step Tutorial :  https://www.ganatan.com/tutorials/getting-sta
 * `npm run coverage`
 
 
+# [Node Getting started](#node-getting-started)
+
+
+## Installation
+* `npm install` (installing dependencies)
+* `npm outdated` (verifying dependencies)
+
+## Development
+* `npm run start`
+* in your browser go to [http://localhost:5000](http://localhost:5000) 
+
+## Production 
+* `npm run build`
+
+## Linter
+* `npm run lint`
+
+## Tests
+* `npm run test`
+* `npm run coverage`
+
+
 
 # [Author](#author)
 * Author  : danny
@@ -160,5 +212,10 @@ Here is a step by step Tutorial :  https://www.ganatan.com/tutorials/getting-sta
 
 ## [Tutoriels Angular en français](#french-tutorials)
 - Installation - https://www.ganatan.com/tutorials/demarrer-avec-angular
+- Tutoriels Etape par étape - https://www.ganatan.com/tutorials
+
+
+## [Tutoriels React en français](#french-tutorials)
+- Installation - https://www.ganatan.com/tutorials/demarrer-avec-react
 - Tutoriels Etape par étape - https://www.ganatan.com/tutorials
 
