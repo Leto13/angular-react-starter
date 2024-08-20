@@ -20,7 +20,7 @@ jobs:
       run:  ls
 
     - name: Build Docker image
-      run: docker build . --file angular-react-starter/angular/Dockerfile --tag angular-starter:$(date +%s)
+      run: docker build . --file angular/Dockerfile --tag angular-starter:$(date +%s)
 
     - name: Set up Node.js
       uses: actions/setup-node@v3
