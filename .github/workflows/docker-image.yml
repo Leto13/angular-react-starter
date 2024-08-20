@@ -16,9 +16,6 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
 
-    - name: list directory
-      run:  ls
-
     - name: Build Docker image
       run: docker build . --file angular/Dockerfile --tag angular-starter:$(date +%s)
 
@@ -29,6 +26,7 @@ jobs:
 
     - name: Install dependencies
       run: npm install
+      run: npm update
 
     - name: Run tests
       run: npm test
