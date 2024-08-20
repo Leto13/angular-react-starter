@@ -1,15 +1,15 @@
-name: Test Pipeline
+name: Docker Image CI
 
 on:
   push:
-    branches:
-      - master
+    branches: [ "master" ]
   pull_request:
-    branches:
-      - master
+    branches: [ "master" ]
 
 jobs:
-  run-tests:
+
+  build:
+
     runs-on: ubuntu-latest
 
     steps:
