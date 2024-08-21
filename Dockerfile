@@ -13,6 +13,9 @@ RUN npm install
 # Copy the rest of the application code
 COPY . .
 
+# Change directory
+RUN ls -la /app
+
 # Build the Angular app
 RUN npm run build
 
