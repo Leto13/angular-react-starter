@@ -1,14 +1,11 @@
 # Step 1: Build the Angular app
 FROM node:18-alpine AS build
 
-# List directory
-RUN ls -la
-
 # Set working directory
 WORKDIR /app
 
 # Copy the package.json and package-lock.json
-COPY package*.json ./
+COPY angular/package*.json /app
 
 # List directory
 RUN ls -la /app
