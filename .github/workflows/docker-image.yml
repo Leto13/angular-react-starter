@@ -19,7 +19,7 @@ jobs:
     - name: Set up Node.js
       uses: actions/setup-node@v3
       with:
-        node-version: '20'
+        node-version: '18'
 
     - name: ls
       run: ls -la
@@ -31,7 +31,7 @@ jobs:
     - name: Run tests
       run: npm test
       working-directory: ./angular
-      continue-on-error: true # Остановить pipeline, если тесты не прошли
+      continue-on-error: false # Остановить pipeline, если тесты не прошли
 
     - name: Build Docker image
       run: docker build . --file Dockerfile --tag angular-starter:$(date +%s)
