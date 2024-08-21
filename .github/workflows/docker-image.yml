@@ -17,7 +17,7 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Build Docker image
-      run: docker build . --file angular/Dockerfile --tag angular-starter:$(date +%s)
+      run: docker build . --file Dockerfile --tag angular-starter:$(date +%s)
 
     - name: Set up Node.js
       uses: actions/setup-node@v3
