@@ -21,6 +21,9 @@ jobs:
       with:
         node-version: '18'
 
+    - name: ls
+      run: ls -la
+
     - name: Install dependencies
       working directory: /home/runner/work/angular-react-starter/angular
       run: npm install
