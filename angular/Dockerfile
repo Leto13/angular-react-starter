@@ -5,7 +5,7 @@ FROM node:18-alpine AS build
 WORKDIR /app
 
 # List directory
-RUN ls
+RUN ls -la /app
 
 # Copy the package.json and package-lock.json
 COPY package*.json ./
