@@ -16,13 +16,13 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
 
-    - name: Build Docker image
-      run: docker build . --file Dockerfile --tag angular-starter:$(date +%s)
-      
     - name: Run tests
       run: npm test
       continue-on-error: false # Остановить pipeline, если тесты не прошли
 
+    - name: Build Docker image
+      run: docker build . --file Dockerfile --tag angular-starter:$(date +%s)
+      
     #- name: Send failure email
     #  if: failure()
     #  uses: dawidd6/action-send-mail@v4
