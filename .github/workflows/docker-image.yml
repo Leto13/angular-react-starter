@@ -26,9 +26,11 @@ jobs:
 
     - name: Install dependencies
       run: npm install
+      working-directory: .//home/runner/work/angular-react-starter/angular-react-starter/angular
 
     - name: Run tests
       run: npm test
+      working-directory: .//home/runner/work/angular-react-starter/angular-react-starter/angular
       continue-on-error: false # Остановить pipeline, если тесты не прошли
 
     - name: Build Docker image
