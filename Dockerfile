@@ -10,9 +10,6 @@ COPY angular/package*.json /app
 # Install dependencies
 RUN npm install
 
-# Change directory for angular
-RUN cd angular
-
 # Copy the rest of the application code
 COPY . .
 
