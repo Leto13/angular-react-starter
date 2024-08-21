@@ -4,6 +4,9 @@ FROM node:18-alpine AS build
 # Set working directory
 WORKDIR /app
 
+# List directory
+RUN ls
+
 # Copy the package.json and package-lock.json
 COPY package*.json ./
 
