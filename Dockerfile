@@ -7,11 +7,11 @@ WORKDIR /app
 # Copy the package.json and package-lock.json
 COPY angular/package*.json /app
 
-# List directory
-RUN ls -la /app
-
 # Install dependencies
 RUN npm install
+
+# Change directory for angular
+RUN cd angular
 
 # Copy the rest of the application code
 COPY . .
