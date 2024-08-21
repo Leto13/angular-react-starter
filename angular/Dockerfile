@@ -4,8 +4,11 @@ FROM node:18-alpine AS build
 # Set working directory
 WORKDIR /app
 
+# Change directory
+RUN cd angular
+
 # Copy the package.json and package-lock.json
-COPY angular/package*.json 
+COPY package*.json 
 
 # List directory
 RUN ls -la /app
