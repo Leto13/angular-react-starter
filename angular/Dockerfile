@@ -8,7 +8,7 @@ WORKDIR /app
 RUN cd angular
 
 # Copy the package.json and package-lock.json
-COPY package*.json 
+COPY package*.json ./
 
 # List directory
 RUN ls -la /app
