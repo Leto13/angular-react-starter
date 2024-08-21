@@ -22,13 +22,11 @@ jobs:
         node-version: '18'
 
     - name: Install dependencies
+      working directory: /home/runner/work/angular-react-starter/angular
       run: npm install
 
     - name: Run tests
-      run: npm test
-      continue-on-error: false # Остановить pipeline, если тесты не прошли
-
-    - name: Run tests
+      working directory: /home/runner/work/angular-react-starter/angular
       run: npm test
       continue-on-error: false # Остановить pipeline, если тесты не прошли
 
