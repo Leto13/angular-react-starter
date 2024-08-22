@@ -10,9 +10,6 @@ COPY ./angular /app
 # Install dependencies
 RUN npm install
 
-# List directory
-RUN ls -la /app
-
 # Build the Angular app
 RUN npm run build
 
