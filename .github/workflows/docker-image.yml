@@ -35,7 +35,7 @@ jobs:
       run: docker build . --file Dockerfile --tag angular-starter:$(date +%s)
 
     - name: Log in to GitHub Container Registry
-      run: echo "${{ secrets.token }}" | docker login ghcr.io -u ${{ angular-react-starter_Leto13 }} --password-stdin
+      run: echo "${{ secrets.TOKEN }}" | docker login ghcr.io -u ${{ angular-react-starter_Leto13 }} --password-stdin
 
     - name: Build and tag Docker image
       run: docker build -t ghcr.io/${{ angular-react-starter_Leto13 }}/${{ angular-react-starter }}/angular-starter .
