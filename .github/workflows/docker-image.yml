@@ -34,13 +34,13 @@ jobs:
     - name: Build Docker image
       run: docker build . --file Dockerfile --tag angular-starter:$(date +%s)
 
-    - name: Log in to GitHub Container Registry
+    #- name: Log in to GitHub Container Registry
       run: echo "${{ secrets.TOKEN }}" | docker login ghcr.io -u ${{ angular-react-starter_Leto13 }} --password-stdin
 
-    - name: Build and tag Docker image
+    #- name: Build and tag Docker image
       run: docker build -t ghcr.io/${{ angular-react-starter_Leto13 }}/${{ angular-react-starter }}/angular-starter .
 
-    - name: Push Docker image to GitHub Packages
+    #- name: Push Docker image to GitHub Packages
       run: docker push ghcr.io/${{ angular-react-starter_Leto13 }}/${{ angular-react-starter }}/angular-starter
       
     #- name: Send failure email
